@@ -103,3 +103,32 @@ ul {
 p {
     font-size: 18px;
 }
+.hero {
+    background-color: white;
+    padding: 60px;
+    border-radius: 20px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 50px;
+}
+
+
+.hero h1 {
+    font-size: 64px;
+}
+
+
+.hero h2 {
+    color: #4aa3df;
+    margin-top: 0;
+}
+
+
+.hero p {
+    font-size: 20px;
+}
+
+
+.button {
+    margin-right: 15px;
+    margin-top: 20px;
+}
