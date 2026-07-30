@@ -1,118 +1,6 @@
 /* ==========================================
-   MEP Project Image Sizing
+   Global & Reset
 ========================================== */
-
-.mep-project .project-media img {
-    width: 60%;
-    max-width: 650px;
-}
-
-.mep-project .image-main {
-    flex: 2.3;
-}
-
-.mep-project .image-side {
-    flex: 0.8;
-}
-
-.mep-project .image-side img {
-    max-width: 180px;
-    margin: 0 auto;
-}
-
-.mep-project .project-media {
-    max-width: 900px;
-    margin: 40px auto;
-}
-
-/* ===========================
-   CONTACT PAGE
-=========================== */
-
-.contact{
-    max-width:1000px;
-    margin:80px auto;
-    padding:20px;
-    text-align:center;
-}
-
-.contact h1{
-    font-size:3rem;
-    margin-bottom:15px;
-}
-
-.contact-description{
-    max-width:700px;
-    margin:0 auto 55px;
-    color:#666;
-    line-height:1.7;
-    font-size:1.05rem;
-}
-
-.contact-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:30px;
-}
-
-.contact-card{
-    background:#fff;
-    padding:35px 30px;
-    border-radius:18px;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-    transition:.3s ease;
-}
-
-.contact-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 18px 40px rgba(0,0,0,.15);
-}
-
-.icon-box{
-    width:70px;
-    height:70px;
-    margin:0 auto 25px;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    border-radius:18px;
-
-    background:linear-gradient(135deg,#004aad,#0066ff);
-
-    color:white;
-
-    font-size:1.8rem;
-}
-
-.contact-card h2{
-    margin-bottom:12px;
-    color:#222;
-}
-
-.contact-card a{
-    color:#004aad;
-    text-decoration:none;
-    font-weight:600;
-    transition:.2s;
-}
-
-.contact-card a:hover{
-    color:#002f75;
-}
-
-@media (max-width:700px){
-
-    .contact h1{
-        font-size:2.4rem;
-    }
-
-}
-/* ==========================================
-   Global Styles
-========================================== */
-
 * {
     margin: 0;
     padding: 0;
@@ -130,36 +18,8 @@ body {
 }
 
 /* ==========================================
-   Navigation
+   Typography & Elements
 ========================================== */
-
-nav {
-    display: flex;
-    gap: 24px;
-    align-items: center;
-    background: white;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    padding: 16px 28px;
-    margin-bottom: 40px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #475569;
-    font-weight: 600;
-    transition: 0.2s;
-}
-
-nav a:hover,
-nav a.active {
-    color: #2563eb;
-}
-
-/* ==========================================
-   Typography
-========================================== */
-
 h1 {
     font-size: 3.2rem;
     color: #0f172a;
@@ -182,20 +42,56 @@ a {
     color: #2563eb;
 }
 
+ul {
+    padding-left: 24px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 900px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
 /* ==========================================
-   Buttons
+   Navigation & Buttons
 ========================================== */
+nav {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 16px 28px;
+    margin-bottom: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #475569;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #2563eb;
+}
 
 .button {
     display: inline-block;
     padding: 12px 22px;
     border-radius: 8px;
     background: #2563eb;
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-weight: 600;
-    margin-right: 12px;
-    margin-top: 10px;
+    margin: 10px 12px 0 0;
     transition: 0.2s;
 }
 
@@ -205,7 +101,7 @@ a {
 }
 
 .button.outline {
-    background: white;
+    background: #fff;
     color: #2563eb;
     border: 1px solid #2563eb;
 }
@@ -215,29 +111,20 @@ a {
 }
 
 /* ==========================================
-   Shared Card Layout
+   Cards & Layout Components
 ========================================== */
-
 .hero,
 .about,
-.content-card {
-    background: white;
+.content-card,
+.project-detail {
+    background: #fff;
     border: 1px solid #e2e8f0;
     border-radius: 16px;
     padding: 48px;
     margin-bottom: 40px;
 }
 
-/* ===== Hero ===== */
-
-.hero {
-    background: white;
-    border: 1px solid #e2e8f0;
-    border-radius: 16px;
-    padding: 50px;
-    margin-bottom: 40px;
-}
-
+/* Hero */
 .hero-content {
     display: grid;
     grid-template-columns: 1fr 280px;
@@ -245,25 +132,10 @@ a {
     gap: 60px;
 }
 
-.hero-text h1 {
-    font-size: 3.5rem;
-    margin-bottom: 8px;
-}
-
-.hero-text h2 {
-    color: #2563eb;
-    margin-bottom: 10px;
-}
-
-.hero-text p {
-    margin-bottom: 24px;
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-}
+.hero-text h1 { font-size: 3.5rem; margin-bottom: 8px; }
+.hero-text h2 { color: #2563eb; margin-bottom: 10px; }
+.hero-text p { margin-bottom: 24px; }
+.hero-buttons { display: flex; gap: 15px; margin-top: 20px; }
 
 .hero-image {
     display: flex;
@@ -275,30 +147,17 @@ a {
     width: 260px;
     height: 260px;
     object-fit: cover;
-    border-radius: 16px;       /* square with rounded corners */
-    border: 4px solid white;
+    border-radius: 16px;
+    border: 4px solid #fff;
     box-shadow: 0 12px 30px rgba(0,0,0,.15);
 }
 
-/* ==========================================
-   About
-========================================== */
+.about h2 { margin-top: 0; }
 
-.about h2 {
-    margin-top: 0;
-}
-
-/* ==========================================
-   Skills
-========================================== */
-
-.skills-list {
-    list-style: none;
-    padding: 0;
-}
-
+/* Skills */
+.skills-list { list-style: none; padding: 0; }
 .skills-list li {
-    background: white;
+    background: #fff;
     border: 1px solid #e2e8f0;
     border-radius: 10px;
     padding: 18px 22px;
@@ -307,9 +166,8 @@ a {
 }
 
 /* ==========================================
-   Projects
+   Projects & Galleries
 ========================================== */
-
 .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
@@ -317,7 +175,7 @@ a {
 }
 
 .project-card {
-    background: white;
+    background: #fff;
     border: 1px solid #e2e8f0;
     border-radius: 14px;
     overflow: hidden;
@@ -330,19 +188,9 @@ a {
     box-shadow: 0 8px 20px rgba(0,0,0,.08);
 }
 
-.project-image img {
-    width: 100%;
-    display: block;
-}
-
-.project-content {
-    padding: 24px;
-}
-
-.project-content h2 {
-    font-size: 1.5rem;
-    margin-top: 0;
-}
+.project-card img { width: 100%; display: block; }
+.project-content { padding: 24px; }
+.project-content h2 { font-size: 1.5rem; margin-top: 0; }
 
 .badge {
     display: inline-block;
@@ -362,25 +210,13 @@ a {
     margin: 18px 0;
 }
 
-.tags span,
-.tag {
+.tags span, .tag {
     background: #f1f5f9;
     color: #475569;
     padding: 6px 12px;
     border-radius: 20px;
     font-size: .85rem;
     font-weight: 500;
-}
-
-/* ==========================================
-   Project Detail
-========================================== */
-
-.project-detail {
-    background: white;
-    border: 1px solid #e2e8f0;
-    border-radius: 16px;
-    padding: 48px;
 }
 
 .meta-grid {
@@ -390,9 +226,13 @@ a {
     margin: 24px 0;
 }
 
+.project-detail section { margin-bottom: 60px; }
+
+/* Media & Side-by-Side Images */
 .project-media {
-    margin: 40px 0;
-    background: white;
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
     border: 1px solid #e2e8f0;
     border-radius: 12px;
     padding: 20px;
@@ -406,27 +246,78 @@ a {
     border-radius: 8px;
 }
 
-.project-media figcaption {
+.mep-project .project-media img {
+    width: 60%;
+    max-width: 650px;
+}
+
+.image-row {
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+    margin: 30px 0;
+}
+
+.image-main {
+    flex: 3;
+}
+
+.mep-project .image-main { flex: 2.3; }
+
+.image-main img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.image-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.mep-project .image-side { flex: 0.8; }
+
+.image-side figure { margin: 0; }
+
+.image-side img {
+    width: 100%;
+    max-width: 180px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+}
+
+figcaption,
+.image-main figcaption,
+.project-media figcaption,
+.project-gallery figcaption {
     margin-top: 12px;
     color: #64748b;
     font-size: .95rem;
 }
 
-/* ==========================================
-   Gallery
-========================================== */
+.image-side figcaption {
+    margin-top: 8px;
+    font-size: .85rem;
+    text-align: center;
+}
 
+/* Galleries */
 .project-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 24px;
     margin: 30px 0;
 }
-.project-detail section {
-    margin-bottom: 60px;
-}
+
 .project-gallery figure {
-    background: white;
+    background: #fff;
     border: 1px solid #e2e8f0;
     border-radius: 12px;
     padding: 16px;
@@ -443,154 +334,6 @@ a {
     display: block;
 }
 
-.project-gallery figcaption {
-    margin-top: 10px;
-    color: #64748b;
-    font-size: .95rem;
-}
-
-/* ==========================================
-   Resume
-========================================== */
-
-iframe {
-    width: 100%;
-    height: 900px;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-}
-
-/* ==========================================
-   Lists
-========================================== */
-
-ul {
-    padding-left: 24px;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-/* ==========================================
-   Mobile
-========================================== */
-
-@media (max-width: 768px) {
-
-    body {
-        padding: 20px 15px;
-    }
-
-    nav {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .hero-content {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-
-    .hero-image img {
-        width: 180px;
-        height: 180px;
-    }
-
-    h1 {
-        font-size: 2.4rem;
-    }
-
-    h2 {
-        font-size: 1.6rem;
-    }
-
-    .hero,
-    .about,
-    .content-card,
-    .project-detail {
-        padding: 30px;
-    }
-}
-/* ==========================================
-   Side-by-Side Project Images
-========================================== */
-
-.image-row {
-    display: flex;
-    gap: 28px;
-    align-items: flex-start;
-    margin: 30px 0;
-}
-
-.image-main {
-    flex: 3;
-}
-
-.image-main img {
-    width: 100%;
-    display: block;
-    border-radius: 12px;
-    border: 1px solid #e2e8f0;
-}
-
-.image-main figcaption {
-    margin-top: 12px;
-    color: #64748b;
-    font-size: .95rem;
-    line-height: 1.5;
-}
-
-.image-side {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
-
-.image-side figure {
-    margin: 0;
-}
-
-.image-side img {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    display: block;
-    border-radius: 10px;
-    border: 1px solid #e2e8f0;
-}
-
-.image-side figcaption {
-    margin-top: 8px;
-    font-size: .85rem;
-    color: #64748b;
-    text-align: center;
-}
-
-/* ==========================================
-   Responsive
-========================================== */
-
-@media (max-width: 768px) {
-
-    .image-row {
-        flex-direction: column;
-    }
-
-    .image-side {
-        flex-direction: row;
-        gap: 12px;
-    }
-
-    .image-side figure {
-        flex: 1;
-    }
-}
-/* ==========================================
-   Parts Gallery
-========================================== */
-
 .parts-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -602,7 +345,7 @@ li {
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: contain;
-    background: white;
+    background: #fff;
     border: 1px solid #e2e8f0;
     border-radius: 12px;
     padding: 10px;
@@ -614,7 +357,105 @@ li {
     box-shadow: 0 8px 20px rgba(0,0,0,.08);
 }
 
+/* ==========================================
+   Contact Page
+========================================== */
+.contact {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.contact-description {
+    max-width: 700px;
+    margin: 0 auto 55px;
+    color: #666;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.contact-card {
+    background: #fff;
+    padding: 35px 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    transition: .3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0,0,0,.15);
+}
+
+.icon-box {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #004aad, #0066ff);
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.contact-card h2 { margin-bottom: 12px; color: #222; }
+
+.contact-card a {
+    color: #004aad;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.contact-card a:hover { color: #002f75; }
+
+/* ==========================================
+   Responsive Breakpoints
+========================================== */
 @media (max-width: 768px) {
+    body { padding: 20px 15px; }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    h1 { font-size: 2.4rem; }
+    .contact h1 { font-size: 2.4rem; }
+    h2 { font-size: 1.6rem; }
+
+    .hero, .about, .content-card, .project-detail {
+        padding: 30px;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .image-row { flex-direction: column; }
+    .image-side { flex-direction: row; gap: 12px; }
+    .image-side figure { flex: 1; }
+
     .parts-gallery {
         grid-template-columns: repeat(2, 1fr);
     }
