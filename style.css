@@ -1,3 +1,30 @@
+/* ==========================================
+   MEP Project Image Sizing
+========================================== */
+
+.mep-project .project-media img {
+    width: 60%;
+    max-width: 650px;
+}
+
+.mep-project .image-main {
+    flex: 2.3;
+}
+
+.mep-project .image-side {
+    flex: 0.8;
+}
+
+.mep-project .image-side img {
+    max-width: 180px;
+    margin: 0 auto;
+}
+
+.mep-project .project-media {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
 /* ===========================
    CONTACT PAGE
 =========================== */
