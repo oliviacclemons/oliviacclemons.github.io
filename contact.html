@@ -4,67 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Olivia Clemons</title>
+
     <link rel="stylesheet" href="style.css">
 
-    <!-- Font Awesome Icons -->
+    <!-- Font Awesome -->
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html" class="active">Contact</a>
-    </nav>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html" class="active">Contact</a>
+</nav>
 
-    <main class="contact-container">
+<section class="contact">
 
-        <h1>Let's Connect</h1>
+    <h1>Contact</h1>
 
-        <p class="contact-intro">
-            Thank you for visiting my portfolio. Feel free to reach out about
-            internship opportunities, engineering projects, or collaborations.
-        </p>
+    <p class="contact-description">
+        Thank you for visiting my portfolio. Feel free to reach out about internship opportunities, engineering projects, or collaborations.
+    </p>
 
-        <div class="contact-grid">
+    <div class="contact-grid">
 
-            <div class="contact-card">
+        <!-- Email -->
+        <div class="contact-card">
+
+            <div class="icon-box">
                 <i class="fas fa-envelope"></i>
-                <h2>Email</h2>
-
-                <a href="mailto:oliviacclemons@gmail.com">
-                    oliviacclemons@gmail.com
-                </a>
             </div>
 
-            <div class="contact-card">
-                <i class="fab fa-linkedin"></i>
-                <h2>LinkedIn</h2>
+            <h2>Email</h2>
 
-                <a href="https://www.linkedin.com/in/olivia-clemons-6195b6296"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    linkedin.com/in/olivia-clemons-6195b6296
-                </a>
-            </div>
-
-            <div class="contact-card">
-                <i class="fab fa-github"></i>
-                <h2>GitHub</h2>
-
-                <a href="https://github.com/oliviacclemons"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    github.com/oliviacclemons
-                </a>
-            </div>
+            <a href="mailto:oliviacclemons@gmail.com">
+                oliviacclemons@gmail.com
+            </a>
 
         </div>
 
-    </main>
+        <!-- LinkedIn -->
+        <div class="contact-card">
+
+            <div class="icon-box">
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+
+            <h2>LinkedIn</h2>
+
+            <a href="https://www.linkedin.com/in/olivia-clemons-6195b6296"
+               target="_blank">
+                View Profile →
+            </a>
+
+        </div>
+
+        <!-- GitHub -->
+        <div class="contact-card">
+
+            <div class="icon-box">
+                <i class="fab fa-github"></i>
+            </div>
+
+            <h2>GitHub</h2>
+
+            <a href="https://github.com/oliviacclemons"
+               target="_blank">
+                Explore Projects →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 
 </body>
 </html>
