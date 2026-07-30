@@ -1,23 +1,25 @@
-/* CONTACT PAGE */
+/* ===========================
+   CONTACT PAGE
+=========================== */
 
-.contact-container{
+.contact{
     max-width:1000px;
-    margin:70px auto;
+    margin:80px auto;
     padding:20px;
     text-align:center;
 }
 
-.contact-container h1{
+.contact h1{
     font-size:3rem;
     margin-bottom:15px;
 }
 
-.contact-intro{
+.contact-description{
     max-width:700px;
-    margin:0 auto 50px;
-    font-size:1.1rem;
-    color:#555;
+    margin:0 auto 55px;
+    color:#666;
     line-height:1.7;
+    font-size:1.05rem;
 }
 
 .contact-grid{
@@ -28,39 +30,58 @@
 
 .contact-card{
     background:#fff;
-    border-radius:14px;
-    padding:35px 25px;
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
-    transition:all .3s ease;
+    padding:35px 30px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s ease;
 }
 
 .contact-card:hover{
     transform:translateY(-8px);
-    box-shadow:0 16px 35px rgba(0,0,0,.15);
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
 }
 
-.contact-card i{
-    font-size:2.5rem;
-    color:#004aad;
-    margin-bottom:20px;
+.icon-box{
+    width:70px;
+    height:70px;
+    margin:0 auto 25px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:18px;
+
+    background:linear-gradient(135deg,#004aad,#0066ff);
+
+    color:white;
+
+    font-size:1.8rem;
 }
 
 .contact-card h2{
-    margin-bottom:15px;
+    margin-bottom:12px;
+    color:#222;
 }
 
 .contact-card a{
     color:#004aad;
     text-decoration:none;
-    word-break:break-word;
+    font-weight:600;
     transition:.2s;
 }
 
 .contact-card a:hover{
     color:#002f75;
-    text-decoration:underline;
 }
 
+@media (max-width:700px){
+
+    .contact h1{
+        font-size:2.4rem;
+    }
+
+}
 /* ==========================================
    Global Styles
 ========================================== */
