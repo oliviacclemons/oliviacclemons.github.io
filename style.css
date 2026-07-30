@@ -229,6 +229,53 @@ nav a.active {
 .project-detail section { margin-bottom: 60px; }
 
 /* Media & Side-by-Side Images */
+/* ==========================================
+   MEP Project Split Sections (Image Left, Text Right)
+========================================== */
+.mep-project .project-section,
+.project-detail .section-split {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 48px;
+}
+
+/* Image on the Left */
+.mep-project .section-media,
+.project-detail .section-split .media {
+    flex: 1;
+    max-width: 50%;
+}
+
+.mep-project .section-media img,
+.project-detail .section-split .media img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    display: block;
+}
+
+/* Text on the Right */
+.mep-project .section-content,
+.project-detail .section-split .content {
+    flex: 1;
+}
+
+/* Responsive adjustment for Mobile */
+@media (max-width: 768px) {
+    .mep-project .project-section,
+    .project-detail .section-split {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mep-project .section-media,
+    .project-detail .section-split .media {
+        max-width: 100%;
+    }
+}
+
 .project-media {
     max-width: 900px;
     margin: 40px auto;
