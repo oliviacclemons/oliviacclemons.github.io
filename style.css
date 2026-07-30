@@ -228,7 +228,6 @@ nav a.active {
 
 .project-detail section { margin-bottom: 60px; }
 
-/* Media & Side-by-Side Images */
 /* ==========================================
    MEP Project Split Sections (Image Left, Text Right)
 ========================================== */
@@ -243,8 +242,8 @@ nav a.active {
 /* Image on the Left */
 .mep-project .section-media,
 .project-detail .section-split .media {
-    flex: 1;
-    max-width: 50%;
+    flex: 1.2;
+    max-width: 55%;
 }
 
 .mep-project .section-media img,
@@ -259,23 +258,10 @@ nav a.active {
 /* Text on the Right */
 .mep-project .section-content,
 .project-detail .section-split .content {
-    flex: 1;
+    flex: 0.8;
 }
 
-/* Responsive adjustment for Mobile */
-@media (max-width: 768px) {
-    .mep-project .project-section,
-    .project-detail .section-split {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .mep-project .section-media,
-    .project-detail .section-split .media {
-        max-width: 100%;
-    }
-}
-
+/* Standard Single Project Media */
 .project-media {
     max-width: 900px;
     margin: 40px auto;
@@ -298,18 +284,20 @@ nav a.active {
     max-width: 650px;
 }
 
+/* Side-by-Side Images (Main + 2 Thumbnails) */
 .image-row {
     display: flex;
-    gap: 28px;
+    gap: 20px;
     align-items: flex-start;
-    margin: 30px 0;
+    margin: 20px 0;
+    width: 100%;
 }
 
 .image-main {
-    flex: 3;
+    flex: 2.2;
 }
 
-.mep-project .image-main { flex: 2.3; }
+.mep-project .image-main { flex: 2.2; }
 
 .image-main img {
     width: 100%;
@@ -322,16 +310,16 @@ nav a.active {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 14px;
 }
 
-.mep-project .image-side { flex: 0.8; }
+.mep-project .image-side { flex: 1; }
 
 .image-side figure { margin: 0; }
 
 .image-side img {
     width: 100%;
-    max-width: 180px;
+    max-width: 220px; /* Increased side thumbnail size */
     aspect-ratio: 1 / 1;
     object-fit: cover;
     display: block;
@@ -497,6 +485,17 @@ figcaption,
     .hero-image img {
         width: 180px;
         height: 180px;
+    }
+
+    .mep-project .project-section,
+    .project-detail .section-split {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mep-project .section-media,
+    .project-detail .section-split .media {
+        max-width: 100%;
     }
 
     .image-row { flex-direction: column; }
